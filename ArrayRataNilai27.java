@@ -8,11 +8,16 @@ public class ArrayRataNilai27 {
         int[] nilaiMhs = new int [10];
         double total = 0;
         double rata_Rata;
+        int lulusCount = 0;
 
         for (int i = 0; i< nilaiMhs.length; i++)
         {
             System.out.println("Masukkan nilai mahasiswa ke-"+(i+1)+" : ");
             nilaiMhs [i] = input27.nextInt();
+            if (nilaiMhs[i] > 70);
+            {
+                lulusCount++;
+            }
         }
         {
             for (int i = 0; i < nilaiMhs.length; i++)
@@ -22,5 +27,6 @@ public class ArrayRataNilai27 {
         }
         rata_Rata = total/nilaiMhs.length;
         System.out.println("Rata-rata nilai = "+rata_Rata);
+        System.out.println("Jumlah mahasiswa yang lulus: " + lulusCount);
     }
 }   
